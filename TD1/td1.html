@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>td1</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="institut-universitaire-des-sciences">Institut Universitaire des
+Sciences</h1>
+<h3 id="devoir-1---mathématiues-informatiques">Devoir 1 -
+Mathématiues-Informatiques</h3>
+<h3 id="préparé-par">Préparé par :</h3>
+<h3 id="nom-byron">Nom : BYRON</h3>
+<h3 id="prénom-pierre-durell-naguiby">Prénom : Pierre Durell
+Naguiby</h3>
+<h3 id="niveau-iii---sciences-informatiques">Niveau : III - Sciences
+Informatiques</h3>
+<hr />
+<p>1 - Installer Jupyter Notebook</p>
+<p>2- Écris un programme qui convertit un nombre décimal en hexadécimal
+en demandant à l’utilisateur de saisir ce nombre.</p>
+<pre><code>decimal = int(input(&quot;Entrer un nombre decimal : &quot;))
+hexad = hex(decimal)
+print(f&quot;{decimal} en hexadécimal est {hexad[2:].upper()}&quot;)
+Entrer un nombre decimal :  45
+
+
+45 en hexadécimal est 2D</code></pre>
+<p>3- Écris un programme qui convertit un nombre hexadécimal en décimal
+en demandant à l’utilisateur de saisir ce nombre.</p>
+<pre><code>hexad = input(&quot;Veuillez entrer un nombre hexadecimal : &quot;)
+decimal = int(hexad, 16)
+print(f&quot;{hexad} en décimal est {decimal}&quot;)
+Veuillez entrer un nombre hexadecimal :  56
+
+
+56 en décimal est 86</code></pre>
+<p>4- Créer un fichier CSV dans Python, charger le et l’afficher</p>
+<pre><code>import pandas as pd
+
+data = {
+&quot;Prenom&quot;: [&quot;Peter&quot;, &quot;Ismael&quot;, &quot;Web&quot;, &quot;Badio&quot;, &quot;Evens&quot;],
+&quot;Nom&quot;: [&quot;Chery&quot;, &quot;St-Amour&quot;, &quot;Marcelin&quot;, &quot;Robaldo&quot;, &quot;Elisee&quot;]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv(&quot;Inscrits.csv&quot;, index=False)
+print(&quot;Fichier CSV créé avec succès !&quot;)
+Fichier CSV créé avec succès !
+df = pd.read_csv(&quot;Inscrits.csv&quot;)
+print(df.head())
+   Prenom       Nom
+0   Peter     Chery
+1  Ismael  St-Amour
+2     Web  Marcelin
+3   Badio   Robaldo
+4   Evens    Elisee</code></pre>
+<p>5- . Créer une grande base de données (5000+ lignes) aléatoires</p>
+<pre><code>import pandas as pd
+import numpy as np
+from faker import Faker
+fake = Faker() # Générateur de données aléatoires
+# Nombre de lignes à générer
+n = 5000
+# Générer des données aléatoires
+data = {
+&#39;ID&#39;: np.arange(1, n+1), # ID de 1 à 1000
+&#39;Nom&#39;: [fake.name() for _ in range(n)], # Noms aléatoires
+&#39;Âge&#39;: np.random.randint(18, 60, size=n), # Âge entre 18 et 60 ans
+&#39;Ville&#39;: [fake.city() for _ in range(n)], # Villes aléatoires
+&#39;Email&#39;: [fake.email() for _ in range(n)], # Emails aléatoires
+&#39;Date Inscription&#39;: [fake.date_this_decade() for _ in range(n)] # Dates d&#39;inscription
+}
+# Convertir en DataFrame Pandas
+df = pd.DataFrame(data)
+# Enregistrer dans un fichier Excel
+df.to_excel(&#39;grande_base_de_donnees.xlsx&#39;, index=False, engine=&#39;openpyxl&#39;)
+print(&quot;Fichier Excel de 5000 entrées généré avec succès !&quot;)
+Fichier Excel de 5000 entrées généré avec succès !</code></pre>
+<p>6- Créer 3Graphes</p>
+<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+# Générer des données aléatoires
+data = np.random.randn(1000)
+# Créer l&#39;histogramme
+plt.hist(data, bins=30, color=&#39;purple&#39;, edgecolor=&#39;black&#39;)
+# Ajouter des titres
+plt.xlabel(&quot;Valeurs&quot;)
+plt.ylabel(&quot;Fréquence&quot;)
+plt.title(&quot;Histogramme des valeurs aléatoires&quot;)
+# Afficher le graphe
+plt.show()</code></pre>
+<p><img src="media/image1.png" style="width:5.77778in;height:4.59596in"
+alt="png" /></p>
+<pre><code>import matplotlib.pyplot as plt
+# Données
+categories = [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;]
+valeurs = [3, 9, 8, 6]
+
+
+# Créer le graphique en barres
+plt.bar(categories, valeurs, color=&#39;red&#39;)
+# Ajouter des titres
+plt.xlabel(&quot;Catégories&quot;)
+plt.ylabel(&quot;Valeurs&quot;)
+plt.title(&quot;Graphe - Categories valeurs&quot;)
+
+plt.show
+&lt;function matplotlib.pyplot.show(close=None, block=None)&gt;</code></pre>
+<p><img src="media/image2.png" style="width:5.59596in;height:4.59596in"
+alt="png" /></p>
+<pre><code>import matplotlib.pyplot as plt
+
+# Données
+labels = [&quot;Apple&quot;, &quot;Samsung&quot;, &quot;Huawei&quot;, &quot;Xiaomi&quot;]
+parts = [40, 30, 15, 15]
+# Créer un diagramme circulaire
+plt.pie(parts, labels=labels, autopct=&#39;%1.1f%%&#39;, colors=[&#39;red&#39;, &#39;blue&#39;, &#39;green&#39;, &#39;orange&#39;])
+# Ajouter un titre
+plt.title(&quot;Part de marché des smartphones&quot;)
+# Afficher le graphe
+plt.show()</code></pre>
+<p><img src="media/image3.png" style="width:4.35353in;height:4.16162in"
+alt="png" /></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>En conclusion, ce TD me permet d’utiliser Jupiter notebook comme
+outil de programmation avec Python et me permet aussi d’écrire un
+programme qui convertit un nombre décimal en hexadécimal en demandant à
+l’utilisateur de saisir ce nombre et vice et vers, de créer un fichier
+CSV dans Python, de le charger et l’afficher, de créer une grande base
+de données aléatoires et de créer des graphes avec la librairie
+matplotlib.</p>
+</body>
+</html>
